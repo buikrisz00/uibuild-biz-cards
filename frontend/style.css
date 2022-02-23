@@ -1,0 +1,102 @@
+/* CSS reset start */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+ol, ul, li {
+    list-style:none;display:block;
+}
+
+/* CSS reset end */
+
+body {
+    background-color: #ffeedf;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px; /**/
+    min-height: 100vh;
+}
+
+#root div {
+    height: 416px;
+    width: 290px;
+    background-color: #fff;
+    padding: 27px;
+}
+
+#root div h2 {
+    width: 200px;
+    color: #33793f;
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#root div h6 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#root div p {
+    margin-bottom: 20px;
+    color: #999;
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#root div p:nth-child(4) {
+    width: 150px;
+}
+
+@media (max-width: 1118px) {
+    #root {
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    #root div:nth-child(1) {
+        margin-top: 75px;
+    }
+}
